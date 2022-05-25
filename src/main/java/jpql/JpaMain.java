@@ -29,8 +29,8 @@ public class JpaMain {
             em.flush();
             em.clear();
 
-            String query = "select coalesce(m.username, '관리자') as username " +
-                    "from Member m";
+            String query = "select concat('a', 'b') from Member m";
+
             List<String> result = em.createQuery(query, String.class)
                     .getResultList();
 
