@@ -14,8 +14,6 @@ public class Product {
     private int price;
     private int stockAmount;
 
-    private String local;
-
     public Long getId() {
         return id;
     }
