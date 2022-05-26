@@ -10,6 +10,8 @@ public class Order {
     private Long id;
     private int orderAmount;
 
+    private String plz;
+
     @Embedded
     private Address address;
 
